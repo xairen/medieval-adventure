@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-message {
+  font-size: 3em;
+  font-family: 'MedievalSharp', cursive;
+  color: #ffd700;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 10px;
+  animation: glow 2s infinite alternate;
+}
+
+.choose-path {
+  font-size: 1.5em;
+  font-family: 'MedievalSharp', cursive;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ff8c00, 0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00;
+  }
+  to {
+    text-shadow: 0 0 20px #ffd700, 0 0 30px #ff8c00, 0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00, 0 0 80px #ff8c00;
+  }
+}
+
+.paths {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.path {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.character-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #4caf50;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-label {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.path:hover .character-image {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #4caf50;
+}
