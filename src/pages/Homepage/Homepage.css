@@ -12,6 +12,8 @@
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -50,6 +52,7 @@
 .paths {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -80,4 +83,62 @@
 .path:hover .character-image {
   transform: scale(1.1);
   box-shadow: 0 0 10px #4caf50;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .welcome-message {
+    font-size: 2.5em;
+  }
+
+  .choose-path {
+    font-size: 1.2em;
+  }
+
+  .character-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .character-label {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-message {
+    font-size: 2em;
+  }
+
+  .choose-path {
+    font-size: 1em;
+  }
+
+  .character-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .character-label {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-message {
+    font-size: 1.5em;
+  }
+
+  .choose-path {
+    font-size: 0.8em;
+  }
+
+  .character-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .character-label {
+    font-size: 0.8em;
+  }
 }
